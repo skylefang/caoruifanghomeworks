@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首次最后一个位置反转万能</title>
+</head>
+<body>
+	<script>
+	   /*
+	      一、indexof
+	      首次位置 i -1   从前往后找
+	       找到任意数组中某一数组元素第一次出现的位置 
+	    */
+		var arr=[1,2,3,1,1,1];
+		indexof(arr,6);  //此处的6并不是一个下标，只是一个数字代表要在数组中寻找6这个数字
+		var result=indexof(arr,6);
+		console.log(result);
+		function indexof(arr,value){
+			for(var i=0;i<arr.length;i++){
+				if(arr[i]==value){
+					return i;
+				}			
+			}
+			return -1;
+		}
+
+
+		/*
+		  二、lastIndexOf  
+		  找到任意数组中某一数组元素最后一次出现的位置  i -1  从后往前找
+		 */
+		var arr=[1,2,5,2,3,1,1,5];
+		lastIdexOf(arr,1);
+		var result=lastIdexOf(arr,1);
+		console.log(result);
+		function lastIdexOf(arr,value){
+			for(var i=arr.length-1;i>=0;i--){
+				if(arr[i]==value){
+					return i;
+				}		
+			}
+		    return -1;
+		}
+
+
+		/*
+		  三、反转  reverse  先将一个数组反转然后再放到一个新的数组中
+		 */
+		var arr=[1,2,3,4,5,6]
+		reverse(arr);
+		console.log(reverse(arr));
+		function reverse(arr){
+			var newarr=[];
+			for(var i=arr.length-1;i>-1;i--){
+                push(newarr,arr[i])
+			}
+			return newarr;
+		}
+		function push(arr,...rest){
+			for(var i=0;i<rest.length;i++){
+				arr[arr.length]=rest[i]
+			}
+		}
+
+
+		/*
+		  四、反转  reverse  先添加元素再反转
+		 */
+		var arr=[1,2,3,4,5,6]
+		var result=reverse(arr,7,8,9);
+		console.log(result);
+		function reverse(arr,...rest){			
+			for(var i=0;i<rest.length;i++){
+				arr[arr.length]=rest[i]
+			}
+			var newarr=[];
+			for(var i=arr.length-1;i>-1;i--){
+                push(newarr,arr[i])
+			}
+			return newarr;
+		}
+		function push(arr,...rest){
+			for(var i=0;i<rest.length;i++){
+				arr[arr.length]=rest[i]
+			}
+		}
+
+
+		/*
+		  五、万能的删除：在任意数组的任意位置删除任意个数组元素
+	      pos 代表删除的位置，num代表删除的个数
+		 */		
+		function spliceCancel(arr,pos,num){
+			var newarr=[];
+			for(var i=0;i<arr.length;i++){
+				if(i>=pos && i<pos+num){
+					continue;
+				}
+				newarr[newarr.length]=arr[i];
+			}
+			return newarr;
+		}
+		var arr=[1,2,3,4,5,6];
+		splice(arr,1,2);
+		var result=spliceCancel(arr,1,2);
+		console.log(result);
+
+
+		/*
+          六、万能的添加：往一个任意数组的任意位置添加任意个元素，即需要三个参数：任意数组、任意位置、任意个元素
+          写入新数组时分为三部分：
+          1.任意位置前的，即原数组中任意位置前的元素先放入新数组中；
+          2.任意位置的元素，即rest数组中的元素再添加到新数组中；
+          3.任意位置后的元素，即从原数组中的任意位置开始到最后的元素添加到新数组中；
+		 */
+		function spliceAdd(arr,pos,...rest){
+			var newarr=[];
+			for(var i=0;i<pos;i++){
+				newarr[newarr.length]=arr[i];
+			}
+			for(var i=0;i<rest.length;i++){
+				newarr[newarr.length]=rest[i];
+			}
+			for(var i=pos;i<arr.length;i++){
+				newarr[newarr.length]=arr[i];
+			}
+			return newarr;
+		}
+		var arr=[1,2,3,4,5,6,5];
+		// splice(arr,2,'a','b','c');
+		var result=spliceAdd(arr,2,'a','b','c');
+		console.log(result);
+
+
+		/*
+		  七、万能的添加和删除，两个功能写到一起
+		 */
+		function splice(arr,pos,num,...rest){
+			var newarr=spliceCancel(arr,pos,num)
+			if(rest.length>0){
+				newarr=spliceAdd(newarr,pos,...rest);
+			}
+			return newarr;
+		}
+		var arr=[1,2,3,4,5,6,5,3,5];
+		// splice(arr,2,3,'a','b','c');
+		var result=splice(arr,2,3,'a','b','c');
+		console.log(result);
+
+
+		/*
+		  八、map  映射  对应关系  执行对应的运算之后得到一个新的数组，里面的值和原数组不同，和原数组无关
+		  将一个函数作为参数进行传递，此函数就成为回调函数。
+		 */
+        var arr=[1,2,3,4,5,6,7];
+    	var result = map(arr,function(value){
+    		return value*2
+    	})
+    	console.log(result);
+    	function map(arr,fn){
+    		var newarr=[];
+    		for(var i=0;i<arr.length;i++){   //先遍历
+    			newarr[newarr.length]=fn(arr[i]);
+    		}
+    		return newarr;
+    	}
+
+    	/*
+    	  九、filter  过滤 筛选把数组中符合条件的数组元素拿出来，放到一个数组中，与原数组的关系是子集的关系
+    	 */
+    	var arr=[56,98,58,96,87,69,21];
+    	var result=filter(arr,function(value){
+    		return value%2==0;
+    	})
+    	console.log(result);
+    	function filter(arr,fn){
+    		var newarr=[];
+            for(var i=0;i<arr.length;i++){
+            	if(fn(arr[i])){
+            		newarr[newarr.length]=arr[i];
+            	}
+            }
+            return newarr;
+    	}
+
+    	/*
+    	  十、some 判断数组中只要有一个某一个符合条件，只要有一个符合条件就可返回true
+    	*/
+    	var arr=[-4,5,9,2,-5];
+    	var result=some(arr,function(value){
+    		return value>0;
+    	})
+    	console.log(result);
+    	function some(arr,fn){
+    		for(var i=0;i<arr.length;i++){
+    			if(fn(arr[i])){
+    				return true;
+    			}
+    		}
+    		return false;
+    	}
+        
+
+        /*
+          十一、every  只有所有的数组元素全部符合条件才能返回true，只要有一个数组元素不符合条件就会返回false
+         */
+        var arr=[-4,5,9,2,-5];
+    	var result=every(arr,function(value){
+    		return value>0;
+    	})
+    	console.log(result);
+    	function every(arr,fn){
+    		for(var i=0;i<arr.length;i++){
+    			if(!fn(arr[i])){
+    				return false;
+    			}
+    		}
+    		return true;
+    	}
+
+
+    	/*
+    	  十二、数组的深拷贝
+    	 */
+    	var arr=[1,2,3,4,['a','b','c']];
+    	var arr1=copy(arr);
+    	arr1[1]=8;   //改值
+    	arr[1]='m';  //改值
+    	console.log(arr);
+    	console.log(arr1);
+    	function copy(arr){
+    		var newarr=[];
+    		for(var i=0;i<arr.length;i++){
+    			if(typeof arr[i]=='object'){
+    				newarr[i]=copy(arr[i])   //如果arr中嵌套了另外的数组就再调用一次copy函数，如果嵌套了多个数组就会用递归函数一层一层解开。即递归
+    			}else{
+    				newarr[i]=arr[i];   //如果原数组中没有嵌套其它数组就直接执行此项
+    			}
+    		}
+    		return newarr;
+    	}
+
+	</script>
+</body>
+</html>
