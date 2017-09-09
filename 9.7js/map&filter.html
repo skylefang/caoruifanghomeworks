@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>映射和筛选</title>
+</head>
+<body>
+    <script>
+        //映射
+    	/*var arr=[1,2,3,4,5,6,7];
+    	var result = map(arr,function(value){
+    		return value*2
+    	})
+    	console.log(result);
+    	function map(arr,fn){
+    		var newarr=[];
+    		for(var i=0;i<arr.length;i++){
+    			newarr[newarr.length]=fn(arr[i]);
+    		}
+    		return newarr;
+    	}*/
+    	//筛选
+    	var arr=[2,6,8,48,58,65,9,5];
+    	var result=filter(arr,function(value){
+    		return value%2==1;
+    	})
+    	console.log(result);
+    	function filter(arr,fn){
+    		var newarr=[];
+    		for(var i=0;i<arr.length;i++){
+    			if(fn(arr[i])){
+    				newarr[newarr.length]=arr[i];
+    			}
+    		}
+    		return newarr;
+    	}
+    	//通过让一个函数作为实参去给形参传值
+    </script>
+	
+</body>
+</html>

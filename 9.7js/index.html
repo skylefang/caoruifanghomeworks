@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>arguments和rest参数</title>
+</head>
+<body>
+
+    <script>
+        //arguments函数内部自动生成的对象，只能在函数的内部调用，保存了函数调用时实参的信息，是一个对象
+    	/*var arr=[1,2,3,4,5,6,7,8,9];
+        push(arr,5,6,58,74,69);
+        function push(arr){
+        	console.log(arguments);
+        	for(var i=1;i<arguments.length;i++){
+        		arr[arr.length]=arguments[i];
+        	}
+            console.log(arr);
+        }*/
+        //rest参数用来接收剩余（没有形参对应的实参）参数，是一个数组用（...名字）表示  rest参数必须写在最后
+        var arr=[1,2,3,4,5,6,7,8,9];
+        push(arr,5,6,58,74,69);
+        function push(arr,...value){
+            for(var i=0;i<value.length;i++){
+                arr[arr.length]=value[i];
+            }
+            console.log(arr);
+        }
+
+    </script>
+    	
+
+
+
+
+
+	
+</body>
+</html>

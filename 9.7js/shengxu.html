@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>升序</title>
+</head>
+<body>
+	<script>
+		/*利用升序、降序的例子罗列默认值的4种方法*/
+		//升序
+		var arr=[8,25,2,3,5,12,15];
+		sortUP(arr);
+		//arr 为实参
+		function sortUP(arr){
+			//arr 为形参
+			for(var i=0;i<arr.length;i++){
+				for(var j=i+1;j<arr.length;j++){
+					if(arr[j]<arr[i]){
+					var temp=arr[j];
+					arr[j]=arr[i];
+					arr[i]=temp;
+				    }
+				}				
+			}
+			console.log(arr);
+		} 		
+	</script>
+</body>
+</html>

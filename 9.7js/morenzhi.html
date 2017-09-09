@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>默认值</title>
+</head>
+<body>
+	<script>
+		/*利用升序、降序的例子罗列默认值的4种方法*/
+		//升序
+		// var arr=[8,25,2,3,5,12,15];
+		// sortUP(arr);
+		//arr 为实参
+		function sortUP(arr){
+			//arr 为形参
+			for(var i=0;i<arr.length;i++){
+				for(var j=i+1;j<arr.length;j++){
+					if(arr[j]<arr[i]){
+					var temp=arr[j];
+					arr[j]=arr[i];
+					arr[i]=temp;
+				    }
+				}				
+			}
+			console.log(arr);
+		} 
+
+
+		//降序  只修改if中的大于小于符号
+		// var arr=[8,25,2,3,5,12,15];
+		// sortDOWN(arr);
+		//arr 为实参
+		function sortDOWN(arr){
+			//arr 为形参
+			for(var i=0;i<arr.length;i++){
+				for(var j=i+1;j<arr.length;j++){
+					if(arr[j]>arr[i]){
+					var temp=arr[j];
+					arr[j]=arr[i];
+					arr[i]=temp;
+				    }
+				}				
+			}
+			console.log(arr);
+		} 
+
+
+		//在一个函数中调用另一个函数，当type传进值时，就会按照传进的值执行 
+		var arr=[8,25,35,65,89,2,3,0];
+		// sort1(arr,'>');
+		// sort1(arr,'<');
+		/*function sort1(arr,type){
+
+			if(type=='<'){
+				sortUP(arr);
+			}else if(type=='>'){
+				sortDOWN(arr);
+			}
+		}*/
+
+
+		//默认值方法一：用if 分支结构
+		//如果在调用函数时，在实参中只给出了一个任意数组，如果type没有传值，那就给它一个默认值，如果传了值则按传的值处理，此时默认值将不起作用
+		// sort(arr);
+		// sort(arr,'>');
+		// function sort(arr,type){
+		// 	if(type==undefined){
+		// 		type='<';     //此处的'<'为自定义值，根据实际情况改动
+		// 	}
+		// 	if(type=='<'){
+		// 		sortUP(arr);
+		// 	}else if(type=='>'){
+		// 		sortDOWN(arr);
+		// 	}
+		// }
+		
+
+		//默认值方法二：三元表达式：判断type是否有值，如果没值则是undefined则给type赋一个值'<',如果type不是undefined则等于type即上面调用函数时赋的值
+		// sort(arr);
+		/*sort(arr,'>');
+		function sort(arr,type){
+			type=type==undefined?'<':type;  //三元表达式的含义判断条件是否为undefined如果是执行问号后面的，如果不是则执行冒号后面的。
+			if(type=='<'){
+				sortUP(arr);
+			}else if(type=='>'){
+				sortDOWN(arr);
+			}
+		}*/
+
+
+		//默认值方法三：逻辑运算与：与运算中六个为false的条件：NAN、undefined、null、0、空字符串、false。此处的原理同上，有值时按赋的值执行，如果没有赋值则按给的默认值计算
+		// sort(arr);
+		/*sort(arr,'>');
+		function sort(arr,type){
+			type || '<';  //此处的type没有传值时为undefined即左边的结果为false，而右边的结果为永真，所以最终表达式弹回的值为'<';
+			if(type=='<'){
+				sortUP(arr);
+			}else if(type=='>'){
+				sortDOWN(arr);
+			}
+		}*/
+
+		//默认值方法四： es6中，在函数中直接给type赋一个值
+		 sort(arr);
+		 function sort(arr,type='<'){   //规定：带有默认值的参数写到最后
+		 	if(type=='<'){
+				sortUP(arr);
+			}else if(type=='>'){
+				sortDOWN(arr);
+			}
+		 }
+		//#注：如果实参为undefined，仍能触发形参的默认值
+
+	</script>
+</body>
+</html>

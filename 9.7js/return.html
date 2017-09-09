@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>return</title>
+</head>
+<body>
+    <script>
+        //实参与形参之间传递的值是一个函数而不是以前的一个变量
+    	function aa(num1,num2){
+            return num1*num2
+    	}
+    	function bb(num1,num2){
+            return num1*num2
+    	}
+    	function cc(num1,num2){
+            return num1*num2
+    	}
+    	function dd(num1,num2){
+            return num1*num2
+    	}
+    	
+    	var result= math(2,3,aa);
+    	console.log(result);
+
+    	function math(num1,num2,fn){
+    		return fn(num1,num2)
+    	}
+    	
+    </script>
+	
+</body>
+</html>

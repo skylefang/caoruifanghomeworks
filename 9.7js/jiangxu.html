@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>降序</title>
+</head>
+<body>
+	<script>
+	    //降序  只修改if中的大于小于符号
+		var arr=[8,25,2,3,5,12,15];
+		sortDOWN(arr);
+		//arr 为实参
+		function sortDOWN(arr){
+			//arr 为形参
+			for(var i=0;i<arr.length;i++){
+				for(var j=i+1;j<arr.length;j++){
+					if(arr[j]>arr[i]){
+					var temp=arr[j];
+					arr[j]=arr[i];
+					arr[i]=temp;
+				    }
+				}				
+			}
+			console.log(arr);
+		} 
+	</script>
+</body>
+</html>

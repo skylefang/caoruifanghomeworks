@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>筛选</title>
+</head>
+<body>
+	<script>
+	    //把数组里面是偶数的数组元素挑选出来
+		var arr=[2,5,65,87,95,87,58,26,48];
+        filter(arr);
+        function filter(arr){
+        	var newarr=[];
+        	for(var i=0;i<arr.length;i++){
+        		if(arr[i]%2==0){
+        			newarr[newarr.length]=arr[i];
+        		}
+        	}
+        	return newarr;
+        }
+       console.log(filter(arr));
+       //把数组转换成字符串
+       var arr=[6,5,4,5,2,5];
+       join(arr,'-');
+       function join(arr,str){
+	       	var result='';
+	       	for(var i=0;i<arr.length;i++){
+	       		if(i<arr.length-1){
+	       			result+=arr[i]+str;
+	       		}else{
+	       			result+=arr[i];
+	       		}
+	       	}
+       	    return result;
+       }
+       console.log(join(arr,'-'));
+       //不给值时使用默认值时 
+       var arr=[5,5,8,6,2,4,9,6,3];
+       join(arr);
+       function join(arr,str){
+       	  //str=str==undefined?'-':str;
+       	  str=str || '-';
+	       	var result='';
+	       	for(var i=0;i<arr.length;i++){
+	       		if(i<arr.length-1){
+	       			result+=arr[i]+str;
+	       		}else{
+	       			result+=arr[i];
+	       		}
+	       	}
+       	    return result;
+       }
+       console.log(join(arr));
+
+	</script>
+</body>
+</html>
