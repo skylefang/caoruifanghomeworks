@@ -1,0 +1,805 @@
+/*
+* @Author: DELL-PC
+* @Date:   2017-08-24 14:23:59
+* @Last Modified by:   DELL-PC
+* @Last Modified time: 2017-08-27 16:51:13
+*/
+@import url('base.css');
+/* 头部开始 */
+header{
+	width: 100%;
+	height: 0.77rem;
+	background: white;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	z-index: 999;
+}
+.head{
+	width: 100%;
+	height: 0.77rem;
+	background: white;
+}
+.hesder-left{
+	width: 0.48rem;
+	height: 0.48rem;
+	/* background: pink; */
+}
+.hesder-left .logo{
+	display: block;
+	width: 0.48rem;
+	height: 0.48rem;
+	/* background: yellowgreen; */
+}
+.hesder-left .logo .hua{
+	display: block;
+	width: 0.48rem;
+	height: 0.48rem;
+}
+.header-center{
+	width: 4.52rem;
+	height: 0.48rem;
+	background: #F4F4F4;
+	border-radius: 0.07rem;
+
+}
+.header-center .search{
+	display: block;
+	width: 0.2rem;
+	height: 0.21rem;
+	background: #F4F4F4;
+	float: left;
+	margin-left: 0.16rem;
+	margin-top: 0.14rem;
+	margin-right: 0.16rem;
+}
+.header-center .search .sousuo{
+	display: block;
+	width: 0.2rem;
+	height: 0.21rem;
+}
+.header-center input{
+	height: 0.48rem;
+	width: 4rem;
+	float: left;
+	border: 0;
+	border-radius: 0.07rem;
+	background: #F4F4F4;
+	font-size: 0.25rem
+}
+.header-center input:focus{
+	outline: none;
+}
+.header-right{
+	width: 0.29rem;
+	height: 0.48rem;
+	/* background: blue; */
+}
+.header-right .image{
+	display: block;
+	width: 0.29rem;
+	height: 0.25rem;
+	margin-top: 0.11rem;
+}
+.header-right .image .xinxi{
+	display: block;
+	width: 0.29rem;
+	height: 0.25rem;
+}
+/* 头部结束 */
+/* banner图开始 */
+.bannerimg{
+	width: 100%;
+	height: 3.33rem;
+	background: yellow;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.banner{
+	width: 100%;
+	height: 3.33rem;
+	background: yellow;
+}
+.banner .img-list{
+	width: 100%;
+	height: 3.33rem;
+	background: pink;
+	float: left;
+	position: absolute;
+}
+.banner .img-list .bannertu{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.banner .img-list .bannertu .bannertu1{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.bottom{
+	width: 0.9rem;
+	height: 0.14rem;
+	/* background: yellow; */
+	position: absolute;
+	right: 0;
+	left: 0;
+	margin-right: auto;
+	margin-left: auto;
+	bottom: 0.08rem;
+	display: flex;
+	justify-content: space-between;
+}
+.bottom .yuan{
+	width: 0.14rem;
+	height: 0.14rem;
+	border-radius: 50%;
+	background: #fff;
+}
+.bottom .yuan:hover{
+	background: #ff4598;
+}
+/* banner图结束 */
+/* 推荐开始 */
+.tuijian{
+	width: 100%;
+	height: 2.2rem;
+	background: white;
+	display: flex;
+	justify-content: space-around;
+}
+.tuijian .tuijiantu{
+	width: 1.37rem;
+	height: 1.77rem;
+	background: white;
+	margin-top: 0.18rem;
+}
+.tuijiantu .yuantu{
+	width: 1.37rem;
+	height: 1.37rem;
+	background: white;
+	border-radius: 50%;
+}
+.tuijiantu .yuantu .yuantu1{
+	width: 1.37rem;
+	height: 1.37rem;
+	border-radius: 50%;
+}
+.tuijiantu .yuantu .yuantu1 .yuantu2{
+	width: 1.37rem;
+	height: 1.37rem;
+	border-radius: 50%;
+}
+.wenzikuang{
+	width: 100%;
+	height: 0.4rem;
+	/* background: red; */
+}
+.wenzikuang .yifen{
+	display: block;
+	width: 100%;
+	height: 0.4rem;
+	font-size: 0.21rem;
+	color: #5e5d5d;
+	text-align: center;
+	line-height: 0.4rem;
+}
+/* 推荐结束 */
+.jianju{
+	width: 100%;
+	height: 0.17rem;
+	background: #eeeeee;
+}
+/* 超值拼团开始 */
+.biaotibox{
+	width: 100%;
+	height: 0.66rem;
+	background: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+.biaotibox-left{
+	width: 1.1rem;
+	height: 0.32rem;
+/* 	background: red; */
+	margin-left: 0.35rem;
+}
+.biaotibox-left .chaozhipintuan{
+	display: block;
+	width: 1.1rem;
+	height: 0.32rem;
+	font-size: 0.21rem;
+	color: #868484;
+}
+.biaotibox-right{
+	width: 1.21rem;
+	height: 0.32rem;
+	/* background: red; */
+	margin-right: 0.35rem;
+
+}
+.biaotibox-right .quanbupintuan{
+	display: block;
+	width: 1.21rem;
+	height: 0.32rem;
+	font-size: 0.21rem;
+	color: #868484;
+}
+.pintuan{
+	width: 6.04rem;
+	height: 2.26rem;
+	background: white;
+	border-bottom: 0.02rem solid #f2f2f2;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
+}
+.pintuan-left{
+	width: 1.72rem;
+	height: 1.72rem;
+	/* background: blue; */
+}
+.pintuan-left .pintuanimg{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.pintuan-left .pintuanimg .pintuanimg1{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.pintuan-right{
+	display: block;
+	width: 4.19rem;
+	height: 1.72rem;
+	/* background: green; */
+}
+.pintuan-right .wenzimiaoshu{
+	width: 4.19rem;
+	height: 0.67rem;
+	background: white;
+	font-size: 0.2rem;
+	color: #020202;
+}
+.pintuan-right .jiage-now{
+	width: 1.27rem;
+	height: 0.75rem;
+	/* background: red; */
+	float: left;
+	font-size: 0.28rem;
+	color: #fa72a4;
+	line-height: 0.75rem;
+}
+.pintuan-right .jiage-before{
+	width: 1.23rem;
+	height: 0.75rem;
+	/* background: purple; */
+	float: left;
+	font-size: 0.13rem;
+	color: #383838;
+	line-height: 0.75rem;
+	text-decoration: line-through;
+}
+.pintuan-right .renshu{
+	width: 2.51rem;
+	height: 0.23rem;
+	background: white;
+	float: left;
+	font-size: 0.17rem;
+	color: #878787;
+	line-height: 0.23rem;
+}
+.pintuan .qukaituan{
+	display: block;
+	width: 1.53rem;
+	height: 0.52rem;
+	border-radius: 0.2rem;
+	background: #ff659a;
+	position: absolute;
+	right: 0.15rem;
+	bottom: 0.28rem;
+	font-size: 0.22rem;
+	color: #e4fffb;
+	text-align: center;
+	line-height: 0.52rem;
+}
+.pintuan1{
+	border-bottom: none;
+}
+.quanbuchaozhipintuan{
+	width: 100%;
+	height: 0.9rem;
+	background: white;
+	overflow: hidden;
+}
+.quanbuchaozhipintuan .anniu{
+	display: block;
+	width: 3.09rem;
+	height: 0.52rem;
+	background: #ff659a;
+	margin: 0.19rem auto 0;
+	border-radius: 0.2rem;
+	font-size: 0.23rem;
+	color: #e4fffb;
+	text-align: center;
+	line-height: 0.52rem;
+}
+/* 超值拼团结束 */
+/* 限时特惠开始 */
+.xianshitehui{
+	width: 100%;
+	height: 1.24rem;
+	background: white;
+}
+.xianshiwenzi{
+	display: block;
+	width: 100%;
+	height: 0.66rem;
+	background: white;
+	font-size: 0.19rem;
+	color: #2d2d2d;
+	text-align: center;
+	line-height: 0.66rem;
+}
+.xianshitupian{
+	width: 5.43rem;
+	height: 3.75rem;
+	background: white;
+	margin-left: 0.17rem;
+	display: flex;
+	justify-content: space-between;
+}
+.xianshitupian .xianshitupian1{
+	width: 1.72rem;
+	height: 3.75rem;
+    background: white;
+}
+.xianshitupian .xianshitupian1 .xianshitupianhezi{
+	display: block;
+	width: 100%;
+	height: 2.39rem;
+	background: red;
+}
+.xianshitupian .xianshitupian1 .xianshitupianhezi .xianshitu{
+	display: block;
+	width: 100%;
+	height: 2.39rem;
+}
+.xianshitupian1 .xianshijiage .xianjia{
+	width: 0.9rem;
+	height: 0.49rem;
+	background: white;
+	float: left;
+	font-size: 0.16rem;
+	color: #c50b3d;
+	line-height: 0.49rem;
+}
+.xianshitupian1 .xianshijiage .yuanjia{
+	width: 0.81rem;
+	height: 0.49rem;
+	background: white;
+	float: right;
+	font-size: 0.12rem;
+	color: #787878;
+	line-height: 0.49rem;
+	text-decoration: line-through;
+}
+.xianshitupian1 .lianniu{
+	width: 1.19rem;
+	height: 0.4rem;
+	float: left;
+	background: #cb0320;
+	margin-left: 0.18rem;
+	border-radius: 0.18rem;
+	font-size: 0.17rem;
+	color: #ffd3d4;
+	line-height: 0.4rem;
+	text-align: center;
+}
+/* 限时特惠结束 */
+/* 本周流行开始 */
+.benzhouliuxing{
+	width: 100%;
+	height: 0.97rem;
+	background: white;
+	font-size: 0.29rem;
+	font-weight: 500;
+	color: #020202;
+	text-align: center;
+	line-height: 0.97rem;
+}
+.benzhoutupian{
+	width: 100%;
+	height: 1.99rem;
+	background: white;
+	display: flex;
+	justify-content: space-around;
+}
+.benzhoutupian .benzhoutupian1{
+	width: 1.22rem;
+	height: 1.99rem;
+	background: #fff;
+}
+
+.benzhoutupian .benzhoutupian1 .liuxingimg{
+	display: block;
+	width: 1.22rem;
+	height: 1.99rem;
+}
+.benzhoutupian .benzhoutupian1 .liuxingimg2{
+	display: block;
+	width: 1.22rem;
+	height: 1.99rem;
+}
+/* 本周流行结束 */
+/* 好物组货开始 */
+.haowu{
+	width: 100%;
+	height: 1.01rem;
+	background: #fff;
+}
+.haowu .haowuwenzi{
+	display: block;
+	width: 100%;
+	height: 0.4rem;
+	background: white;
+	font-size: 0.29rem;
+	font-weight: 500;
+	color: #020202;
+	text-align: center;
+	line-height: 0.4rem;
+}
+.haowu .zismall{
+	display: block;
+	width: 100%;
+	height: 0.6rem;
+	background: white;
+	font-size: 0.2rem;
+	font-weight: 500;
+	color: #a7a7a7;
+	text-align: center;
+}
+.haowutu1{
+	display: block;
+	width: 100%;
+	height: 3.66rem;
+	background: #fff;
+}
+.haowutu1 .imgbig{
+	display: block;
+	width: 100%;
+	height: 3.66rem;
+}
+.haowutu2{
+	display: block;
+	width: 5.45rem;
+	height: 2.69rem;
+	background: #fff;
+	margin-left: 0.18rem;
+	display: flex;
+	justify-content: space-between;
+}
+.haowutu2 .photobox{
+	width: 1.72rem;
+	height: 2.51rem;
+	background: white;
+	margin-top: 0.18rem;
+}
+.haowutu2 .photobox .photobox-top{
+	width: 1.72rem;
+	height: 1.72rem;
+	background: #fff;
+}
+.haowutu2 .photobox .photobox-top .photobox-toptu{
+	display: block;
+	width: 1.72rem;
+	height: 1.72rem;
+}
+.haowutu2 .photobox .photobox-miaoshu{
+	width: 1.72rem;
+	height: 0.47rem;
+	background: #fff;
+	font-size: 0.19rem;
+	color: #21211f;
+	line-height: 0.47rem;
+}
+.haowutu2 .photobox .photobox-jiage{
+	width: 1.72rem;
+	height: 0.3rem;
+	background: #fff;
+	font-size: 0.15rem;
+	color: #f53c76; 
+}
+/* 好物组货结束 */
+/* 流行单品开始 */
+.liuxingdanpin{
+	width: 100%;
+	height: 0.7rem;
+	background: #fff;
+    border-top: 0.02rem solid #eaedf1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.liuxingdanpin .liuxing-left{
+	display: block;
+	width: 1.21rem;
+	height: 0.32rem;
+	background: #fff;
+	margin-left: 0.17rem;
+	font-size: 0.21rem;
+	color: #353032; 
+}
+.liuxingdanpin .liuxing-right{
+	display: block;
+	width: 2.3rem;
+	height: 0.32rem;
+	background: #fff;
+	margin-right: 0.18rem;
+	font-size: 0.21rem;
+	color: #a9a4a5; 
+}
+.liuxing{
+	width: 6.06rem;
+	height: 5.79rem;
+	margin-left: 0.17rem;
+	background: #fff;
+	border-radius: 0.05rem;
+	display: flex;
+	justify-content: space-between;
+}
+.liuxing .shangxindanpin{
+	width: 2.95rem;
+	height: 5.79rem;
+	background: #fff;
+	border-radius: 0.05rem;
+	border-right: 0.02rem solid #f4f4f4;
+	border-left: 0.02rem solid #f4f4f4;
+	border-bottom: 0.02rem solid #f4f4f4;
+}
+.shangxindanpin .shangxintupian{
+	display: block;
+	width: 2.95rem;
+	height: 4.4rem;
+	border-radius: 0.05rem;
+	overflow: hidden;
+}
+.shangxindanpin .shangxintupian .shangxin1{
+	display: block;
+	width: 2.95rem;
+	height: 4.4rem;
+}
+.tedian{
+	width: 2.9rem;
+	height: 0.25rem;
+	background: #fff;
+	margin-top: 0.12rem;
+}
+.tedian .tedian1{
+	display: block;
+    width: 0.54rem;
+    height: 0.25rem;
+    background: #f9e4a8;
+    margin-left: 0.06rem;
+    border-radius: 0.03rem;
+    float: left;
+    font-size: 0.17rem;
+    color: #2a2b2e;
+    text-align: center;
+    line-height: 0.25rem;
+}
+.tedian .tedian2{
+	display: block;
+	width: 1.2rem;
+	height: 0.25rem;
+	background: #f2f5f8;
+    margin-left: 0.06rem;
+    border-radius: 0.03rem;
+    float: left;
+    font-size: 0.16rem;
+    color: #696982;
+    text-align: center;
+    line-height: 0.25rem;
+}
+.tedian .tedian3{
+	display: block;
+	width: 0.5rem;
+	height: 0.25rem;
+	background: #f2f5f8;
+	margin-left: 0.06rem;
+	border-radius: 0.03rem;
+    float: left;
+    font-size: 0.16rem;
+    color: #696982;
+    text-align: center;
+    line-height: 0.25rem;
+}
+.tedian .tedian4{
+	display: block;
+	width: 0.4rem;
+	height: 0.25rem;
+	background: #f2f5f8;
+	margin-left: 0.06rem;
+	border-radius: 0.03rem;
+    float: left;
+    font-size: 0.16rem;
+    color: #696982;
+    text-align: center;
+    line-height: 0.25rem;
+}
+.tedian-2{
+	width: 2.9rem;
+	height: 0.24rem;
+	background: #fff;
+	margin-top: 0.09rem;
+	font-size: 0.16rem;
+    color: #696982;
+    text-align: center;
+    line-height: 0.25rem;
+}
+.tedian-2 .tedian5{
+	display: block;
+    width: 0.5rem;
+    height: 0.24rem;
+    background: #f2f5f8;
+    margin-left: 0.06rem;
+    border-radius: 0.03rem;
+    float: left;
+    font-size: 0.16rem;
+    color: #696982;
+    text-align: center;
+    line-height: 0.25rem;
+}
+.tedian-2 .tedian6{
+	display: block;
+	width: 0.5rem;
+	height: 0.27rem;
+	background: #f2f5f8;
+    margin-left: 0.06rem;
+    border-radius: 0.03rem;
+    float: left;
+    font-size: 0.16rem;
+    color: #696982;
+    text-align: center;
+    line-height: 0.25rem;
+}
+.tedian-2 .tedian7{
+	display: block;
+    width: 0.5rem;
+    height: 0.25rem;
+    background: #f2f5f8;
+    margin-left: 0.06rem;
+    border-radius: 0.03rem;
+    float: left;
+    font-size: 0.16rem;
+    color: #696982;
+    text-align: center;
+    line-height: 0.25rem;
+}
+.shangxinjiage{
+	width: 2.85rem;
+	height: 0.64rem;
+	background: #fff;
+	margin-left: 0.06rem;
+	/* font-size: 0.16rem;
+    color: #2f2f2f;
+    line-height: 0.66rem; */
+}
+.shangxinjiage .shangxinjiage1{
+    display: block;
+    width: 2.12rem;
+    height: 0.64rem;
+    background: #fff;
+    float: left; 
+    font-size: 0.16rem;
+    color: #272727;
+    line-height: 0.66rem;
+}
+.shangxinjiage .shangxinjiage2{
+    display: block;
+    width: 0.44rem;
+    height: 0.64rem;
+    background: #fff;
+    float: left; 
+    font-size: 0.15rem;
+    color: #2c2c2c;
+    line-height: 0.66rem;
+    text-align: center;
+}
+.shangxinjiage .shangxinjiage3{
+    display: block;
+    width: 0.25rem;
+    height: 0.23rem;
+    margin-top: 0.20rem;
+    background: #fff;
+    float: left; 
+}
+.shangxinjiage .shangxinjiage3 .shangxinjiage33{
+	display: block;
+    width: 0.25rem;
+    height: 0.23rem; 
+}
+.jiange{
+	width: 100%;
+	height: 0.34rem;
+	background: #fff;
+}
+/* 流行单品结束 */
+/* 底部定位开始 */
+.home{
+	width: 100%;
+	height: 0.8rem;
+/* 	margin-left: 0.17rem; */
+	background: #fff;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	z-index: 999;
+}
+.home .homebtn{
+	width: 0.8rem;
+	height: 0.68rem;
+}
+.home .homebtn .homebtn1{
+	display: block;
+	width: 0.34rem;
+	height: 0.35rem;
+	/* background: red; */
+	margin-left: 0.23rem;
+}
+.home .homebtn .homebtn1 .homebtn11{
+	display: block;
+	width: 0.34rem;
+	height: 0.35rem;
+}
+.home .homebtn .homebtn1zi{
+	display: block;
+	width: 0.8rem;
+	height: 0.22rem;
+	font-size: 0.19rem;
+	color: #989898;
+	text-align: center;
+	line-height: 0.22rem;
+	margin-top: 0.08rem;
+}
+.home .homebtn .homebtn1zi:hover{
+    color: #ee1a5b;
+}
+.home .homebtn .homebtn2{
+	display: block;
+	width: 0.33rem;
+	height: 0.35rem;
+	/* background: red; */
+	margin-left: 0.23rem;
+}
+.home .homebtn .homebtn2 .homebtn22{
+	display: block;
+	width: 0.34rem;
+	height: 0.35rem;
+}
+.home .homebtn .homebtn3{
+	display: block;
+	width: 0.38rem;
+	height: 0.35rem;
+	/* background: red; */
+	margin-left: 0.22rem;
+}
+.home .homebtn .homebtn3 .homebtn33{
+	display: block;
+	width: 0.34rem;
+	height: 0.35rem;
+}
+.tianchong{
+	width: 100%;
+	height: 0.8rem;
+}
+/* 底部定位结束 */

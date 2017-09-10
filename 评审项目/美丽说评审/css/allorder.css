@@ -1,0 +1,296 @@
+/*
+* @Author: DELL-PC
+* @Date:   2017-08-25 23:06:34
+* @Last Modified by:   DELL-PC
+* @Last Modified time: 2017-08-31 15:48:29
+*/
+
+@import url('base.css');
+body{
+	background: #f6f6f6;
+}
+/* 头部开始 */
+header{
+	width: 100%;
+	height: 0.9rem;
+	background: #fff;
+	border-bottom: 0.02rem solid #f8f8f8;
+}
+.head-left{
+	width: 0.17rem;
+	height: 0.88rem;
+	background: white;
+	margin-left: 0.18rem;
+	float: left;	
+}
+.head-left1{
+	display: block;
+	width: 0.17rem;
+	height: 0.33rem;
+/* 	background: yellow; */
+	margin-top: 0.26rem;
+	font-size: 0.33rem;
+	line-height: 0.9rem;
+}
+.head-left1 .shezhi{
+	display: block;
+	width: 0.17rem;
+	height: 0.33rem;
+}
+.xitongshezhi{
+	width: 1.29rem;
+	height: 0.9rem;
+/* 	background: pink; */
+	margin: 0 auto;
+	float: left;
+	margin-left: 2.2rem;
+	font-size: 0.3rem;
+	line-height: 0.9rem;
+	text-align: center;
+}
+/* 头部结束 */
+/* 订单分类开始 */
+.fenleishangpin{
+	width: 100%;
+	height: 0.79rem;
+	background: #fff;
+	display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 0.02rem solid #e4e4e4;
+}
+.fenleishangpin .fenleiminzi{
+	width: 1rem;
+	height: 0.58rem;
+	background: #fff;
+	margin-top: 0.19rem;
+}
+.fenleishangpin .fenleiminzi .fenleilianjie{
+	display: block;
+	width: 1rem;
+	height: 0.58rem;
+	background: #fff;
+}
+.fenleiminzi .fenleilianjie .liuxingwenzi{
+	width: 1rem;
+	height: 0.53rem;
+	background: #fff;
+	font-size: 0.22rem;
+	color: #252525;
+	line-height: 0.43rem;
+	text-align: center;
+}
+.fenleiminzi .fenleilianjie .xiahuaxian{
+	width: 0.45rem;
+	height: 0.05rem;
+	background: #212121;
+    margin: 0 auto;
+    opacity: 0;
+}
+.fenleiminzi .fenleilianjie:hover .xiahuaxian{
+	opacity: 1;
+}
+/* 订单分类结束 */
+/* 订单商品开始 */
+.meiliyouxuan{
+	width: 100%;
+	height: 0.79rem;
+	background: #fff;
+}
+.meiliyouxuan-left{
+	display: block;
+	width: 1rem;
+	height: 0.79rem;
+	/* background: yellow; */
+	float: left;
+	margin-left: 0.29rem;
+	font-size: 0.2rem;
+	color: #323232;
+	line-height: 0.79rem;
+}
+.meiliyouxuan-right{
+	display: block;
+	width: 0.75rem;
+	height: 0.79rem;
+	/* background: yellow; */
+	float: right;
+	margin-right: 0.36rem;
+	font-size: 0.2rem;
+	color: #373737;
+	line-height: 0.79rem;
+}
+.dakuan{
+	width: 100%;
+	height: 4.25rem;
+	background: white;
+}
+.daifukuan{
+	width: 100%;
+	height: 2.06rem;
+	background: #fff;
+}
+.daifukuan2{
+	width: 6.04rem;
+	height: 2.06rem;
+	background: white;
+	margin: 0 auto;
+	border-top: 0.01rem solid #e8e8e8;
+	border-bottom: 0.02rem solid #e8e8e8;
+	display: flex;
+	justify-content: space-between;
+}
+.daifukuan2 .daifukuan2-left{
+	width: 1.09rem;
+	height: 2rem;
+	background: #white;
+}
+.daifukuan2-left .tupiankuang{
+	display: block;
+	width: 1.09rem;
+	height: 1.6rem;
+	/* background: red; */
+	margin-top: 0.2rem;
+}
+.tupiankuang .img1{
+	display: block;
+	width: 1.09rem;
+	height: 1.6rem;
+}
+.daifukuan2 .daifukuan2-right{
+	width: 4.8rem;
+	height: 2rem;
+	background: white;
+}
+.daifukuan2-right .right-top{
+	display: block;
+	width: 3.92rem;
+	height: 0.65rem;
+	background: #fff;
+	margin-top: 0.2rem;
+	font-size: 0.18rem;
+	color: #303030;
+	float: left;
+}
+.daifukuan2-right .right-jiage{
+	display: block;
+	width: 0.82rem;
+	height: 0.3rem;
+	background: #fff;
+	float: right;
+	margin-top: 0.45rem;
+	font-size: 0.16rem;
+	color: #6f6f6f;
+}
+.daifukuan2-right .right-shuxing{
+	display: block;
+	width: 2.84rem;
+	height: 0.34rem;
+	/* background: purple; */
+	float: left;
+	font-size: 0.18rem;
+	color: #999999;
+}
+.daifukuan2-right .right-shuliang{
+	display: block;
+	width: 0.37rem;
+	height: 0.54rem;
+	/* background: chocolate; */
+	float: right;
+	margin-top: 0.45rem;
+	font-size: 0.14rem;
+	color: #939393;
+	text-align: center;
+	line-height: 0.54rem;
+}
+.fukuan{
+	width: 100%;
+	height: 1.4rem;
+	background: #fff;
+}
+.fukuan .fukuan2{
+	width: 6.04rem;
+	height: 0.62rem;
+	background: #fff;
+	border-bottom: 0.01rem solid #f5f6f7;
+	margin: 0 auto;
+}
+.fukuan2 .baoyou{
+	display: block;
+	width: 1rem;
+	height: 0.6rem;
+	background: white;
+	float: left;
+	margin-left: 3.29rem;
+	font-size: 0.2rem;
+	color: #2d2d2d;
+	line-height: 0.62rem;
+}
+.fukuan2 .zongji{
+	display: block;
+	width: 0.74rem;
+	height: 0.61rem;
+	/* background: yellow; */
+	float: left;
+	font-size: 0.2rem;
+	color: #2d2d2d;
+	line-height: 0.62rem;
+	text-align: right;
+}
+.fukuan2 .yuan{
+	display: block;
+	width: 1rem;
+	height: 0.61rem;
+	/* background: red; */
+	float: right;
+	font-size: 0.2rem;
+	color: #fc6fa4;
+	line-height: 0.61rem;
+}
+.fukuan .fukuan3{
+	width: 6.04rem;
+	height: 0.78rem;
+	/* background: skyblue; */
+	margin: 0 auto;
+}
+.fukuan3 .shijian{
+	width: 2.8rem;
+	height: 0.78rem;
+	/* background: blue; */
+	margin-left: 0.11rem;
+	float: left;
+	font-size: 0.19rem;
+	color: #ff548c;
+	line-height: 0.78rem;
+}
+.fukuan3 .yuanjiao{
+	display: block;
+	width: 1.28rem;
+	height: 0.51rem;
+	background: #fe6699;
+	margin-top: 0.14rem;
+	float: right;
+	border-radius: 0.24rem;
+	font-size: 0.2rem;
+	color: #fcf9fd;
+	line-height: 0.51rem;
+	text-align: center;
+}
+/* 订单商品结束 */
+.jiange{
+	width: 100%;
+	height: 0.09rem;
+	background: #f6f6f6;
+}
+.zuihou{
+	display: block;
+	width: 4.75rem;
+	height: 0.26rem;
+/* 	background: red; */
+	margin-left: 0.83rem;
+	margin-top: 0.21rem;
+}
+.zuihou .zuihou1{
+	display: block;
+	width: 4.75rem;
+	height: 0.26rem;
+}

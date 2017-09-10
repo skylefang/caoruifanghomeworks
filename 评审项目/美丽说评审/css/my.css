@@ -1,0 +1,384 @@
+/*
+* @Author: DELL-PC
+* @Date:   2017-08-25 23:03:47
+* @Last Modified by:   DELL-PC
+* @Last Modified time: 2017-08-27 11:39:29
+*/
+@import url('base.css');
+/* 头部开始 */
+body{
+	background: #f2f5f8;
+}
+header{
+	width: 100%;
+	height: 0.79rem;
+	background: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+}
+.headtianchong{
+	width: 100%;
+	height: 0.79rem;
+}
+.head-left{
+	width: 0.38rem;
+	height: 0.39rem;
+	background: #fff;
+	margin-left: 0.21rem;
+	margin-top: 0.2rem;
+	float: left;
+}
+.head-left .head-left1{
+	display: block;
+	width: 0.38rem;
+	height: 0.39rem;
+}
+.head-left .head-left1 .img1{
+	display: block;
+	width: 0.38rem;
+	height: 0.39rem;
+}
+.head-right{
+	width: 0.36rem;
+	height: 0.32rem;
+	background: #fff;
+	margin-top: 0.23rem;
+	float: right;
+	margin-right: 0.21rem;
+}
+.head-right .head-right1{
+	display: block;
+	width: 0.36rem;
+	height: 0.32rem;
+}
+.head-right .head-right1 .img2{
+	display: block;
+	width: 0.36rem;
+	height: 0.32rem;
+}
+/* 头部结束 */
+/* 个人信息开始 */
+.xinxi{
+	width: 100%;
+	height: 1.41rem;
+	background: #fff;
+}
+.xinxi .touxiang{
+	display: block;
+	width: 0.9rem;
+	height: 0.9rem;
+	background: #fff;
+	border-radius: 50%;
+	margin-left: 0.18rem;
+	margin-top: 0.25rem;
+	float: left; 
+}
+.xinxi .touxiang .img3{
+	display: block;
+	width: 0.9rem;
+	height: 0.9rem;
+	border-radius: 50%;
+}
+.xinxi .name{
+	display: block;
+	width: 2rem;
+	height: 0.9rem;
+	background: #fff;
+	margin-top: 0.25rem;
+	float: left;
+	font-size: 0.24rem;
+	color: #232323;
+	line-height: 0.9rem;
+	text-align: center;
+}
+.xinxi .VIP{
+	display: block;
+	width: 0.44rem;
+	height: 0.44rem;
+	background: #fff;
+	margin-top: 0.48rem;
+	float: left;
+}
+.xinxi .VIP .img4{
+	display: block;
+	width: 0.44rem;
+	height: 0.44rem;
+}
+/* 个人信息结束 */
+/* 订单区开始 */
+.dingdan{
+	width: 100%;
+	height: 1.41rem;
+	background: #fff;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 0.09rem;
+}
+.dingdan li{
+	width: 1rem;
+	height: 1.41rem;
+	background: #fff;
+}
+.dingdan li .gongneng-top{
+	display: block;
+	width: 0.47rem;
+	height: 0.4rem;
+	background: white;
+	margin: 0 auto;
+	margin-top: 0.31rem;
+}
+.gongneng-top .img5{
+	display: block;
+	width: 0.47rem;
+	height: 0.4rem;
+}
+.dingdan li .gongneng-bottom{
+	display: block;
+	width: 1rem;
+	height: 0.6rem;
+	background: #fff;
+	font-size: 0.22rem;
+	color: #292929;
+	line-height: 0.6rem;
+	text-align: center;
+}
+/* 订单区结束 */
+/* 功能区开始 */
+section{
+	width: 100%;
+	height: 3.5rem;
+	background: #fff;
+	overflow: hidden;
+	margin-top: 0.09rem;
+}
+.gongnengkuang{
+	width: 6.04rem;
+	height: 2.97rem;
+	background: #fff;
+	margin-top: 0.27rem;
+	margin-left: 0.18rem;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-between;
+	justify-content: space-between;
+}
+.gongnengkuang .small{
+	width: 1.35rem;
+	height: 1.35rem;
+	background: white;
+	border-radius: 0.04rem;
+}
+.small .photo{
+	display: block;
+	width: 1.35rem;
+	height: 1.35rem;
+	overflow: hidden;
+}
+.small .photo .img5{
+	display: block;
+	width: 1.35rem;
+	height: 1.35rem;
+}
+/* 功能区结束 */
+/* 分享开始 */
+.share{
+	width: 100%;
+	height: 1.43rem;
+	background: #fff;
+	margin-top: 0.09rem;
+	overflow: hidden;
+}
+.share .share1{
+	display: block;
+	width: 100%;
+	height: 1.43rem;
+}
+.share1 .share1-left{
+	width: 0.54rem;
+	height: 0.54rem;
+	background: #fff;
+	margin-top: 0.27rem;
+	margin-left: 0.18rem;
+	float: left;
+	overflow: hidden;
+}
+.share1 .share1-left .img6{
+	display: block;
+	width: 0.54rem;
+	height: 0.54rem;
+}
+.share1 .share1-center{
+    width: 1.49rem;
+    height: 0.54rem;
+    background: #fff;
+    margin-left: 0.21rem;
+    margin-top: 0.27rem;
+    float: left;
+    font-size: 0.24rem;
+    color: #242424;
+    line-height: 0.54rem;
+}
+.share1 .share1-right1{
+	width: 0.97rem;
+	height: 0.54rem;
+	background: #fff;
+	float: right;
+	margin-top: 0.27rem;
+	font-size: 0.2rem;
+	color: #5f5f5f;
+	line-height: 0.54rem;
+	text-align: center; 
+}
+.share1 .share1-right2{
+	width: 0.11rem;
+	height: 0.54rem;
+	background: #fff;
+	float: right;
+	margin-right: 0.18rem;
+	margin-top: 0.27rem;
+}
+.share1 .share1-right2 .img7{
+	display: block;
+	width: 0.11rem;
+	height: 0.54rem;
+}
+/* 分享结束 */
+/* 蘑菇街开始 */
+.mogu{
+	width: 100%;
+	height: 1.07rem;
+	background: #fff;
+	margin-top: 0.09rem; 
+}
+.mogu .mogu1{
+	display: block;
+	width: 100%;
+	height: 1.07rem;
+	overflow: hidden;
+}
+.mogu1 .mogulogo{
+	width: 0.72rem;
+	height: 0.72rem;
+	background: #fff;
+	margin-top: 0.18rem;
+	margin-left: 0.18rem;
+	float: left;
+}
+.mogu1 .mogulogo .img8{
+	display: block;
+	width: 0.72rem;
+	height: 0.72rem;
+}
+.moguwenzi{
+	width: 4.0rem;
+	height: 0.72rem;
+	background: #fff;
+	margin-top: 0.18rem;
+	float: left;
+}
+.moguwenzi .moguwenzi-top{
+	width: 3.9rem;
+	height: 0.31rem;
+	background: #fff;
+	margin-left: 0.1rem;
+	font-size: 0.21rem;
+	color: #333333;
+}
+.moguwenzi .moguwenzi-bottom{
+	width: 3.9rem;
+	height: 0.41rem;
+	background: #fff;
+	margin-left: 0.1rem;
+	font-size: 0.21rem;
+	color: #606060;
+	line-height: 0.41rem;
+}
+.mogu1 .open{
+	width: 0.75rem;
+	height: 0.36rem;
+	background: white;
+	border: 0.03rem solid #e71c5b;
+	float: right;
+	margin-top: 0.35rem;
+	margin-right: 0.18rem;
+	border-radius: 0.16rem;
+	font-size: 0.18rem;
+	color: #e5084c;
+	line-height: 0.36rem;
+	text-align: center;
+}
+/* 蘑菇街结束 */
+/* 底部定位开始 */
+.home{
+	width: 100%;
+	height: 0.8rem;
+/* 	margin-left: 0.17rem; */
+	background: #fff;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	z-index: 999;
+}
+.home .homebtn{
+	width: 0.8rem;
+	height: 0.68rem;
+}
+.home .homebtn .homebtn1{
+	display: block;
+	width: 0.34rem;
+	height: 0.35rem;
+	/* background: red; */
+	margin-left: 0.23rem;
+}
+.home .homebtn .homebtn1 .homebtn11{
+	display: block;
+	width: 0.34rem;
+	height: 0.35rem;
+}
+.home .homebtn .homebtn1zi{
+	display: block;
+	width: 0.8rem;
+	height: 0.22rem;
+	font-size: 0.19rem;
+	color: #989898;
+	text-align: center;
+	line-height: 0.22rem;
+	margin-top: 0.08rem;
+}
+.home .homebtn .homebtn1zi:hover{
+    color: #ee1a5b;
+}
+.home .homebtn .homebtn2{
+	display: block;
+	width: 0.33rem;
+	height: 0.35rem;
+	/* background: red; */
+	margin-left: 0.23rem;
+}
+.home .homebtn .homebtn2 .homebtn22{
+	display: block;
+	width: 0.34rem;
+	height: 0.35rem;
+}
+.home .homebtn .homebtn3{
+	display: block;
+	width: 0.38rem;
+	height: 0.35rem;
+	/* background: red; */
+	margin-left: 0.22rem;
+}
+.home .homebtn .homebtn3 .homebtn33{
+	display: block;
+	width: 0.34rem;
+	height: 0.35rem;
+}
+.tianchong{
+	width: 100%;
+	height: 0.8rem;
+}
+/* 底部定位结束 */

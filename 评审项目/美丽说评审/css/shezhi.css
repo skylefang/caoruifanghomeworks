@@ -1,0 +1,132 @@
+/*
+* @Author: DELL-PC
+* @Date:   2017-08-25 23:05:17
+* @Last Modified by:   DELL-PC
+* @Last Modified time: 2017-08-26 10:40:03
+*/
+@import url('base.css');
+body{
+	background: #f2f5f8;
+}
+header{
+	width: 100%;
+	height: 0.9rem;
+	background: #fff;
+}
+.head-left{
+	width: 0.17rem;
+	height: 0.9rem;
+	background: white;
+	margin-left: 0.18rem;
+	float: left;	
+}
+.head-left1{
+	display: block;
+	width: 0.17rem;
+	height: 0.33rem;
+/* 	background: yellow; */
+	margin-top: 0.26rem;
+	font-size: 0.33rem;
+	line-height: 0.9rem;
+}
+.head-left1 .shezhi{
+	display: block;
+	width: 0.17rem;
+	height: 0.33rem;
+}
+.xitongshezhi{
+	width: 1.29rem;
+	height: 0.9rem;
+/* 	background: pink; */
+	margin: 0 auto;
+	float: left;
+	margin-left: 2.2rem;
+	font-size: 0.32rem;
+	line-height: 0.9rem;
+	text-align: center;
+}
+.function1{
+	width: 100%;
+	height: 2.43rem;
+	background: #fff;
+	margin-top: 0.18rem;
+}
+.function1 .functionlist{
+	width: 6.13rem;
+	height: 0.81rem;
+	margin-left: 0.27rem;
+	/* background: yellow; */
+	border-bottom: 1px solid #f7f7f7;
+}
+.function1 .functionlist:last-child{
+	border-bottom: none;
+}
+.functionwenzi{
+	display: block;
+	width: 6.13rem;
+	height: 0.81rem;
+	background: #fff;
+}
+.functionwenzi .functionwenzi-left{
+	width: 1.92rem;
+	height: 0.81rem;
+	background: white;
+	float: left;
+	font-size: 0.26rem;
+	color: #4d444a;
+	line-height: 0.81rem;
+}
+.functionwenzi .functionwenzi-right{
+	width: 0.86rem;
+	height: 0.81rem;
+	/* background: pink; */
+	float: left;
+	margin-left: 2.95rem;
+	font-size: 0.16rem;
+	color: #989898;
+	line-height: 0.81rem;
+}
+.functionwenzi .functionwenzi-right2{
+	width: 0.13rem;
+	height: 0.81rem;
+	/* background: gold; */
+	float: left;
+}
+.functionwenzi-right2 .gengduo{
+	display: block;
+	width: 0.13rem;
+	height: 0.81rem;
+}
+.function2{
+	width: 100%;
+	height: 1.61rem;
+	background: white;
+	margin-top: 0.18rem;
+}
+.function2 .functionlist2{
+	width: 6.13rem;
+	height: 0.81rem;
+	margin-left: 0.27rem;
+	/* background: yellow; */
+	border-bottom: 1px solid #f7f7f7;
+}
+.function2 .functionlist2:last-child{
+	border-bottom: none;
+}
+.zuihou{
+	width: 100%;
+	height: 0.89rem;
+	background: #fff;
+	margin-top: 0.26rem;
+}
+.tuichu{
+	display: block;
+	width: 100%;
+	height: 0.89rem;
+	font-size: 0.24rem;
+	color: #ff2158;
+	line-height: 0.89rem;
+	text-align: center;
+
+}
+

@@ -1,0 +1,21 @@
+/*
+* @Author: Administrator
+* @Date:   2017-08-17 16:07:34
+* @Last Modified by:   DELL-PC
+* @Last Modified time: 2017-08-22 23:46:56
+*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: "微软雅黑","宋体",sans-serif;
+}
+a{
+	text-decoration: none;
+}
+img{
+	display: block;
+}
+body{
+	background: #fff;
+}

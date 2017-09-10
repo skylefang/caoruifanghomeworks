@@ -1,0 +1,497 @@
+/*
+* @Author: DELL-PC
+* @Date:   2017-08-28 09:56:23
+* @Last Modified by:   DELL-PC
+* @Last Modified time: 2017-08-29 09:41:02
+*/
+@import url('base.css');
+body{
+	background: #F2F2F2;
+}
+header{
+	width: 100%;
+	height: 40px;
+	background: #444444;
+}
+header main{
+	/* width: 976px; */
+	height: 40px;
+	/* background: red; */
+	margin: 0 auto;
+}
+.head-right{
+	float: right;
+	font-size: 12px;
+	line-height: 40px;
+}
+main a{
+	color: #A8A8AA;
+}
+nav{
+	width: 100%;
+	height: 44px;
+	background: #040404;
+}
+nav ul{
+	/* width: 976px;  设好响应后注释掉 */
+	height: 44px;
+	/* background: yellow; */
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+nav ul a{
+	color: #fff;
+	font-size: 14px;
+	line-height: 44px;
+}
+nav ul a:hover{
+	color: #828282;
+}
+.banner{
+	/* width: 100%; */
+	height: 542px;
+}
+.banner ul{
+	/* width: 100%; */
+	height: 542px;
+	position: relative;
+}
+.banner ul li{
+	/* width: 100%; */
+	height: 542px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+.banner ul li a{
+	display: block;
+	width: 100%;
+	height: 496px;
+}
+.bannerwenzi{
+	width: 100%;
+	height: 215px;
+	font-size: 39px;
+	text-align: center;
+	margin-top: 20px;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.list{
+	width: 100%;
+	/* height: 272px; */
+}
+.list ul{
+	width: 100%;
+	/* height: 272px; */
+	/* background: pink; */
+	overflow: hidden;
+}
+.list ul::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.list ul li{
+	/* width: 25%; */
+	height: 272px;
+	/* background: yellow; */
+	border: 2px solid #fff;
+	float: left;
+	border-left: none;
+}
+.list ul li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.he-top{
+	width: 100%;
+	font-size: 16px;
+	text-align: center;
+	color: white;
+	margin-top: 20px;
+}
+.he-bottom{
+	width: 100%;
+	font-size: 8px;
+	text-align: center;
+	color: white;
+	margin-top: 6px;
+}
+.z11{
+	color: #000;
+}
+.caise{
+	font-size: 16px;
+	font-weight: 600;
+	background-image: -webkit-linear-gradient(left top,#8E8AD4 40%,#FDC9FC 45%,#F16FE5 50%,#389AFF 60%);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;
+}
+.explain{
+	/* width: 976px; */
+	margin: 0 auto;
+}
+.exp{
+	/* width: 976px; */
+	border-bottom: 1px solid #d6d6d6;
+	margin: 0 auto;
+	font-size: 12px;
+	color: #888888;
+	line-height: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.explain2{
+	/* width: 976px; */
+	margin: 0 auto;
+}
+.exp2{
+	margin: 0 auto;
+	/* background: yellow; */
+	font-size: 10px;
+	color: #888888;
+	line-height: 23px;
+	display: flex;
+}
+.explain2 ul li{
+	width: 20%;
+	color: #888888;
+	/* line-height: 23px; */
+	padding-bottom: 29px;
+}
+.explain2 ul li .top{
+	margin-top: 40px;
+	color: #333333;
+}
+.explain2 ul li a{
+	display: block;
+	color: #555555;
+}
+.explain2 ul li a:hover{
+    color: #202020;
+    text-decoration: underline;
+}
+.explain3{
+	/* width: 100%; */
+}
+.exp3{
+	width: 100%;
+	padding-left: 24px;
+	padding-right: 24px;
+	overflow: hidden;
+}
+.exp3 li{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.exp3 li a{
+	font-size: 12px;
+	color: #333;
+}
+.exp3 li a span:last-child{
+    float: right;
+}
+.explain4{
+	/* width: 976px; */
+	margin: 0 auto;
+    margin-bottom: 10px;
+}
+.exp4{
+	/* width: 976px; */
+	/* border-bottom: 1px solid #d6d6d6; */
+	margin: 0 auto;
+	font-size: 12px;
+	color: #888888;
+	line-height: 20px;
+	/* padding-top: 15px;
+	padding-bottom: 15px; */
+}
+.exp4 a{
+	color: #0070C9;
+}
+.exp4 a:hover{
+	text-decoration: underline;
+}
+.explain5{
+	/* width: 976px; */
+	margin: 0 auto;
+}
+.exp5{
+	/* width: 976px; */
+	border-top: 1px solid #ccc;
+	margin: 0 auto;
+	font-size: 12px;
+	color: #888888;
+	line-height: 20px;
+	padding-top: 8px;
+	padding-bottom: 15px;
+	margin-bottom: 30px;
+}
+.exp5 span{
+	float: left;
+}
+.exp5 a{
+	padding-left: 13px;
+	padding-right: 13px;
+	color: #888888;
+	float: left;
+}
+.exp5 a:hover{
+	text-decoration: underline;
+}
+.exp5 .right1{
+	float: right;
+	padding-right: 0px;
+}
+.exp5 .wenzi{
+	float: right;
+	padding-left: 6px;
+}
+.explain6{
+    /* width: 100%; */
+    padding-left: 24px;
+	padding-right: 24px;
+	margin-top: 15px;
+}
+.exp6{
+	width: 100%;
+	overflow: hidden;
+	font-size: 12px;
+	color: #888888;
+	line-height: 20px;
+	margin-bottom: 30px;
+
+}
+.exp6 li{
+    padding-top: 5px;
+}
+.exp6 a{
+	font-size: 12px;
+	color: #0070c9;
+}
+.exp6 .a1{
+	color: #888888;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+.exp6 .a1:first-child{
+	padding-left: 0px;
+}
+@media screen and (min-width: 1024px){
+	header main{
+		width: 976px;
+	}
+	nav ul{
+		width: 976px;
+	}
+	.fir{
+		display: block;
+	}
+	.sec{
+		display: none;
+	}
+	.banner ul li{
+		width: 100%;
+	}
+	.banner ul li:first-child{
+		background: url('../img/iphone_7_large.jpg') no-repeat center;
+		background-size: 100% 100%;
+	}
+	.list ul li{
+		width: 25%;
+	}
+	.list ul li:last-child{
+		border-right: none;
+	}
+	.list ul li:first-child{
+		background: url('../img/hey_siri_large1.jpg') no-repeat center;
+		background-size: 100% 100%;
+	}
+	.list ul li:nth-child(2){
+		background: url('../img/bts_beats_ipadlarge2.jpg') no-repeat center;
+		background-size: 100% 100%;
+	}
+	.list ul li:nth-child(3){
+		background: url('../img/macbookair_large3.jpg') no-repeat center;
+		background-size: 100% 100%;
+	}
+	.list ul li:last-child{
+		background: url('../img/how_to_shoot_on_iphone_large4.png') no-repeat center;
+		background-size: 100% 100%;
+	}
+	.explain{
+		width: 976px;
+	}
+	.explain2{
+		width: 976px;
+	}
+	.explain3{
+		width: 976px;
+	}
+	.explain4{
+		width: 976px;
+	}
+	.explain5{
+		width: 976px;
+	}
+	.explain6{
+		width: 976px;
+	}
+	.explain2{
+		display: block;
+	}
+	.explain3{
+		display: none;
+	}
+	.explain6{
+		display: none;
+	}
+	.explain4{
+		width: 976px;
+	}
+}
+/* 小于1024px 中屏*/
+@media screen and (max-width: 1024px){
+	header main{
+		padding: 0 24px;
+	}
+	nav ul{
+		padding: 0 24px;
+	}
+	.fir{
+		display: block;
+	}
+	.sec{
+		display: none;
+	}
+	.explain{
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+	.explain2{
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+	.explain4{
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+	.explain5{
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+
+	.explain2{
+		display: block;
+	}
+	.explain3{
+		display: none;
+	}
+
+	.explain4{
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+	.explain5{
+		display: block;
+	}
+	.explain6{
+		display: none;
+
+    }
+}
+/* 大于768px小于1024px */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+	.banner ul li{
+		width: 100%;
+	}
+	.banner ul li:first-child{
+		background: url('../img/iphone_7_medium.jpg') no-repeat center;
+		background-size: 100% 100%;
+	}
+	.list ul li{
+		width: 50%;
+	}
+	.list ul li:nth-child(2n){
+		border-right: none;
+	}
+	.list ul li:first-child{
+		background: url('../img/hey_siri_medium1.jpg') no-repeat center;
+		background-size: 100% 100%;
+	}
+	.list ul li:nth-child(2){
+		background: url('../img/bts_beats_ipad_medium2.jpg') no-repeat center;
+		background-size: 100% 100%;
+	}
+	.list ul li:nth-child(3){
+		background: url('../img/macbookair_medium3.jpg') no-repeat center;
+		background-size: 100% 100%;
+	}
+	.list ul li:last-child{
+		background: url('../img/how_to_shoot_on_iphone_m4.png') no-repeat center;
+		background-size: 100% 100%;
+	}
+}
+/* 小于768px 小屏 */
+@media screen and (max-width: 768px){
+	/* nav ul{
+		padding: 0 24px;
+	} */
+	.fir{
+		display: none;
+	}
+	.sec{
+		display: block;
+	}
+	.banner ul li{
+		width: 100%;
+	}
+	.banner ul li:first-child{
+		background: url('../img/iphone_7_small.jpg') no-repeat center;
+		background-size: 100% 100%;
+	}
+	.list ul li{
+		width: 100%;
+		border: none;
+		border-top: 2px solid #fff;
+	}
+	.list ul li:last-child{
+		border-bottom: 2px solid #fff;
+		background: url('../img/how_to_shoot_on_iphone_small4.png') no-repeat center;
+		background-size: 100% 100%;
+	}
+	.list ul li:first-child{
+		background: url('../img/hey_siri_small1.jpg') no-repeat center;
+		background-size: 100% 100%;
+	}
+	.list ul li:nth-child(2){
+		background: url('../img/bts_beats_ipad_small2.jpg') no-repeat center;
+		background-size: 100% 100%;
+	}
+	.list ul li:nth-child(3){
+		background: url('../img/macbookair_small3.jpg') no-repeat center;
+		background-size: 100% 100%;
+	}
+	.explain2{
+		display: none;
+	}
+	.explain3{
+		display: block;
+	}
+	.explain4{
+		display: none;
+	}
+	.explain5{
+		display: none;
+	}
+	.explain6{
+		display: block;
+	}
+}
